@@ -1,33 +1,38 @@
-name: Build APK
+name: Build Android APK
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ "main", "master" ] # Chạy khi bạn push code vào nhánh chính
+  pull_request:
+    branches: [ "main", "master" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - name: set up JDK 17
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-          # Tắt cache tạm thời để tránh lỗi nếu cấu hình sai đường dẫn
-          
+          cache: gradle
+
       - name: Grant execute permission for gradlew
-        # Thêm dòng working-directory để trỏ vào đúng thư mục chứa code
-        run: chmod +x gradlew
-        working-directory: LookandTell-OfficialApp
+        # Đường dẫn chính xác đến file gradlew trong repo của bạn
+        run: chmod +x LookandTell/gradlew
 
       - name: Build with Gradle
-        # Tiếp tục trỏ vào thư mục con để build
+        # Chạy lệnh build bên trong thư mục LookandTell
         run: ./gradlew assembleDebug
-        working-directory: LookandTell-OfficialApp
+        working-directory: LookandTell
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: LookAndTell-Debug-APK
-          # Đường dẫn file APK sau khi build xong cũng nằm trong thư mục con
-          path: LookandTell-OfficialApp/app/build/outputs/apk/debug/*.apk
+          name: LookAndTell-App-Debug
+          # Đường dẫn đến file APK sau khi build xong
+          path: LookandTell/app/build/outputs/apk/debug/*.apk
