@@ -1,27 +1,33 @@
-name: Android CI
+name: Build APK
 
-on: [push] # Tự động build mỗi khi bạn đẩy code mới lên
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: gradle
-
+          # Tắt cache tạm thời để tránh lỗi nếu cấu hình sai đường dẫn
+          
       - name: Grant execute permission for gradlew
+        # Thêm dòng working-directory để trỏ vào đúng thư mục chứa code
         run: chmod +x gradlew
+        working-directory: LookandTell-OfficialApp
 
       - name: Build with Gradle
+        # Tiếp tục trỏ vào thư mục con để build
         run: ./gradlew assembleDebug
+        working-directory: LookandTell-OfficialApp
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: my-app-apk
-          path: app/build/outputs/apk/debug/*.apk
+          name: LookAndTell-Debug-APK
+          # Đường dẫn file APK sau khi build xong cũng nằm trong thư mục con
+          path: LookandTell-OfficialApp/app/build/outputs/apk/debug/*.apk
