@@ -1,6 +1,4 @@
-<div id="top"></div>
-
-# LookandTell OfficialApp
+# Ứng Dụng Look & Tell Chính Thức
 ![Java](https://img.shields.io/badge/Language-Java-ed8217?logo=java)
 ![Android Studio](https://img.shields.io/badge/IDE-Android%20Studio-3DDC84.svg?logo=androidstudio)
 ![Tensorflow](https://img.shields.io/badge/Framework-Tensorflow-important?logo=tensorflow)
@@ -12,104 +10,122 @@
     <img src="https://github.com/khooinguyeen/Sign-Language-Translator/blob/main/Sign%20Language%20Translator/Demo/lookandtell.png" width="400">
   </a>
 
-  <h3 align="center">Look & Tell</h3>
+  <h3 align="center">Look & Tell - Nhìn Và Kể</h3>
 
   <p align="center">
-    An app that help translate Vietnamese sign language 
+    Ứng dụng hỗ trợ dịch ngôn ngữ ký hiệu Việt Nam 
     <br />
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp"><strong>Khám phá tài liệu »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp">View Demo</a>
+    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp">Xem Demo</a>
     ·
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp/issues">Report Bug</a>
+    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp/issues">Báo cáo Lỗi</a>
     ·
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp/issues">Request Feature</a>
+    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp/issues">Yêu cầu Tính năng</a>
   </p>
 </div>
 
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Mục lục</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#về-dự-án">Về Dự Án</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#công-nghệ-sử-dụng">Công Nghệ Sử Dụng</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#bắt-đầu">Bắt Đầu</a>
       <ul>
-        <li><a href="#model">Model</a></li>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#mô-hình">Mô Hình</a></li>
+        <li><a href="#yêu-cầu-cần-thiết">Yêu Cầu Cần Thiết</a></li>
+        <li><a href="#cài-đặt">Cài Đặt</a></li>
       </ul>
     </li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#liên-hệ">Liên Hệ</a></li>
+    <li><a href="#ghi-nhận">Ghi Nhận</a></li>
   </ol>
 </details>
 
-## About The Project
+## Về Dự Án
 
-The story begins when Kiet becomes my neighbor, he is a born deaf, ie since he was born, he has not been able to hear his mother's voice. And every day, for 10 years - until now, that child is in 5th grade, I have witnessed every day that the child struggles, has difficulty in expressing the simplest wishes of an elementary school child.
+Câu chuyện bắt đầu khi Kiệt (hàng xóm của tôi) - một bé khiếc từ khi sinh ra, không thể nghe thấy tiếng mẹ. Trong 10 năm qua, tôi chứng kiến hàng ngày bé gái này gặp khó khăn trong việc biểu đạt những mong muốn đơn giản nhất của một đứa trẻ tiểu học.
 
-Learn about the deaf and hard of hearing, there are currently **1.5 billion** speech and hearing impaired people in the world, and **2.5 million** people in Vietnam - a huge community! However, it entails a huge economic burden for countries. According to a 2015 WHO report, the cost of speech and hearing impairment ranges from $750 to $790 billion. By 2019 it will exceed $981 billion (according to Global Burden Disease), mainly due to community and social costs - an too great economic burden for countries. * In Vietnam, the number of qualified sign language interpreters is only about **20** people, and there are no reasonable communication support products (only 1 product is produced by a student of Ho Chi Minh City University of Science and Technology but requires an additional one). equipment costs nearly 1 million VND), while conducting a survey of **250** people including deaf and hard of hearing people, it was found that nearly **100%** of people want to create a bridge to integrate and really need a product that supports communication.
+Tìm hiểu về cộng đồng khiếc và khiếm thính, trên toàn thế giới có **1,5 tỷ** người bị mất hoặc suy giảm thính lực, và tại Việt Nam có **2,5 triệu** người - một cộng đồng rất lớn! Tuy nhiên, điều này tạo ra gánh nặng kinh tế khổng lồ cho các quốc gia. Theo báo cáo năm 2015 của WHO, chi phí điều trị mất hoặc suy giảm thính lực dao động từ 750 đến 790 tỷ USD. Đến năm 2019 sẽ vượt quá 981 tỷ USD (theo Global Burden Disease), chủ yếu do chi phí cộng đồng và xã hội. 
 
-With the desire to talk with Kiet (my neighbor) as well as all the deaf and hard of hearing people in the world, my friend and I decided to do this project, creating a sign language translation app
+Ở Việt Nam, số lượng thông dịch viên ngôn ngữ ký hiệu có trình độ chỉ khoảng **20** người, và không có sản phẩm hỗ trợ giao tiếp hợp lý (chỉ có 1 sản phẩm được sản xuất bởi sinh viên Đại học Khoa học Tự nhiên TP.HCM nhưng cần thêm thiết bị có chi phí gần 1 triệu VND). Theo khảo sát **250** người bao gồm những người khiếc và khiếm thính, gần **100%** mong muốn có một cây cầu nối kết và thực sự cần một sản phẩm hỗ trợ giao tiếp.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Với mong muốn giao tiếp với Kiệt cũng như tất cả những người khiếc và khiếm thính trên thế giới, chúng tôi đã quyết định thực hiện dự án này - tạo ra một ứng dụng dịch ngôn ngữ ký hiệu.
+
+<p align="right">(<a href="#top">về đầu trang</a>)</p>
 
 
-### Built With
+### Công Nghệ Sử Dụng
 
 * [Android Studio](https://developer.android.com/)
 * [Tensorflow Lite](https://www.tensorflow.org/lite)
 * [Mediapipe](https://mediapipe.dev/#!)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">về đầu trang</a>)</p>
 
-## Getting Started
+## Bắt Đầu
 
-### Model
-* There are 3 models bundled in this App: hand_landmark.tflite, palm_detection.tflite, model.tflite which are located in `assets` and `ml` folder
+### Mô Hình
+* Ứng dụng này bao gồm 3 mô hình: hand_landmark.tflite, palm_detection.tflite, model.tflite nằm trong thư mục `assets` và `ml`
 
-* Visit [Sign Language Translation](https://github.com/khooinguyeen/Sign-Language-Translation) to download the model and see how we build the model 
+* Truy cập [Sign Language Translation](https://github.com/khooinguyeen/Sign-Language-Translation) để tải xuống mô hình và xem cách chúng tôi xây dựng mô hình 
 
-### Prerequisites
-* Android Studio 3.2 (installed on a Linux, Mac or Windows machine)
-* Android device in [developer mode](https://developer.android.com/studio/debug/dev-options) with USB debugging enabled
-* USB cable (to connect Android device to your computer)
+### Yêu Cầu Cần Thiết
+* Android Studio 3.2 (được cài đặt trên máy tính Linux, Mac hoặc Windows)
+* Thiết bị Android ở [chế độ nhà phát triển](https://developer.android.com/studio/debug/dev-options) với gỡ lỗi USB được bật
+* Cáp USB (để kết nối thiết bị Android với máy tính của bạn)
 
-### Installation
+### Cài Đặt
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+**Dưới đây là hướng dẫn cài đặt và thiết lập ứng dụng của bạn:**
 
-Step 1. Clone the repo
-Clone the Look & Tell GitHub repository to your computer.
+**Bước 1: Clone kho lưu trữ**
+
+Clone kho lưu trữ GitHub Look & Tell vào máy tính của bạn.
    ```sh
    git clone https://github.com/khooinguyeen/LookandTell-OfficialApp
    ```
 
-Open the Look & Tell source code in Android Studio. To do this, open Android Studio and select `Open`, setting the folder to `../LookandTell-main/LookandTell/app`
+Mở mã nguồn Look & Tell trong Android Studio. Để làm điều này, hãy mở Android Studio và chọn `Open`, đặt thư mục thành `../LookandTell-main/LookandTell/app`
 
+<p align="right">(<a href="#top">về đầu trang</a>)</p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+**Bước 2: Xây dựng dự án Android Studio**
 
-Step 2. Build the Android Studio project
-Select `Build -> Make Project` and check that the project builds successfully. You will need Android SDK configured in the settings. You'll need at least SDK version 23. The `build.gradle` file will prompt you to download any missing libraries.
-  
+Chọn `Build -> Make Project` và kiểm tra xem dự án có xây dựng thành công không. Bạn sẽ cần cấu hình Android SDK trong cài đặt. Bạn cần ít nhất phiên bản SDK 23. Tệp `build.gradle` sẽ nhắc bạn tải xuống bất kỳ thư viện nào bị thiếu.
+
 ![](LookandTell/Demo/build.png)
   
-Step 3. Install and run the app
-Connect the Android device to the computer and be sure to approve any ADB permission prompts that appear on your phone. Select `Run -> Run app`. Select the deployment target in the connected devices to the device on which the app will be installed. This will install the app on the device.
+**Bước 3: Cài đặt và chạy ứng dụng**
+
+Kết nối thiết bị Android với máy tính và đảm bảo phê duyệt bất kỳ lời nhắc quyền ADB nào xuất hiện trên điện thoại của bạn. Chọn `Run -> Run app`. Chọn mục tiêu triển khai trên các thiết bị được kết nối với thiết bị trên đó ứng dụng sẽ được cài đặt. Điều này sẽ cài đặt ứng dụng trên thiết bị.
+
 ![](LookandTell/Demo/run.png)
 
-## Contact
+<p align="right">(<a href="#top">về đầu trang</a>)</p>
 
-Email: khoinguyenmai17102005@gmail.com
+## Liên Hệ
 
-Project Link: [Look & Tell App](https://github.com/khooinguyeen/LookandTell-OfficialApp)
-Another project: [Sign Language Translation](https://github.com/khooinguyeen/Sign-Language-Translation)
+**Thông tin dự án:**
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+- **Họ và Tên:** Nguyễn Nhật Thiện
+- **Lớp:** 9D4
+- **Trường:** THCS Nguyễn Huệ
+- **Email:** khoinguyenmai17102005@gmail.com
+
+**Liên kết Dự án:**
+
+- [Look & Tell App](https://github.com/khooinguyeen/LookandTell-OfficialApp)
+- [Sign Language Translation](https://github.com/khooinguyeen/Sign-Language-Translation)
+
+<p align="right">(<a href="#top">về đầu trang</a>)</p>
+
+## Ghi Nhận
+
+Cảm ơn tất cả những người đã hỗ trợ và cống hiến cho dự án này.
