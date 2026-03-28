@@ -15,14 +15,14 @@
   <p align="center">
     Ứng dụng hỗ trợ dịch ngôn ngữ ký hiệu Việt Nam 
     <br />
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp"><strong>Khám phá tài liệu »</strong></a>
+    <a href="https://github.com/thcsthatatthuy-creator/Look-Tell-OfficalApp.git"><strong>Khám phá tài liệu »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp">Xem Demo</a>
+    <a href="https://github.com/thcsthatatthuy-creator/Look-Tell-OfficalApp.git">Xem Demo</a>
     ·
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp/issues">Báo cáo Lỗi</a>
+    <a href="https://github.com/thcsthatatthuy-creator/Look-Tell-OfficalApp/issues">Báo cáo Lỗi</a>
     ·
-    <a href="https://github.com/khooinguyeen/LookandTell-OfficialApp/issues">Yêu cầu Tính năng</a>
+    <a href="https://github.com/thcsthatatthuy-creator/Look-Tell-OfficalApp/issues">Yêu cầu Tính năng</a>
   </p>
 </div>
 
@@ -89,7 +89,7 @@ Với mong muốn giao tiếp với Kiệt cũng như tất cả những ngườ
 
 Clone kho lưu trữ GitHub Look & Tell vào máy tính của bạn.
    ```sh
-   git clone https://github.com/khooinguyeen/LookandTell-OfficialApp
+   git clone https://github.com/thcsthatatthuy-creator/Look-Tell-OfficalApp.git
    ```
 
 Mở mã nguồn Look & Tell trong Android Studio. Để làm điều này, hãy mở Android Studio và chọn `Open`, đặt thư mục thành `../LookandTell-main/LookandTell/app`
@@ -117,12 +117,12 @@ Kết nối thiết bị Android với máy tính và đảm bảo phê duyệt 
 - **Họ và Tên:** Nguyễn Nhật Thiện
 - **Lớp:** 9D4
 - **Trường:** THCS Nguyễn Huệ
-- **Email:** khoinguyenmai17102005@gmail.com
+- **Email:** nhatthien152011@gmail.com
 
 **Liên kết Dự án:**
 
-- [Look & Tell App](https://github.com/khooinguyeen/LookandTell-OfficialApp)
-- [Sign Language Translation](https://github.com/khooinguyeen/Sign-Language-Translation)
+- [Look & Tell App](https://github.com/thcsthatatthuy-creator/Look-Tell-OfficalApp.git)
+- [Sign Language Translation](https://github.com/thcsthatatthuy-creator/Vietnamese-Sign-Language.git)
 
 <p align="right">(<a href="#top">về đầu trang</a>)</p>
 
